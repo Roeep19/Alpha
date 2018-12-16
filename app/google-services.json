@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "477109050338",
+    "firebase_url": "https://alpha-432f2.firebaseio.com",
+    "project_id": "alpha-432f2",
+    "storage_bucket": "alpha-432f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477109050338:android:a50df4fa92485d88",
+        "android_client_info": {
+          "package_name": "com.example.roee_p.alpha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477109050338-26gjccofo9iqfs504m6fe08ujlkb9im9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs51qgXOGLBFy7uoNA_r4NYKWlCllnD6Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
