@@ -12,14 +12,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Credits"></activity>
+        <activity android:name=".Job" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".FireBase" />
+        <activity android:name=".Enter">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FireBase"></activity>
+        <activity android:name=".Temp" />
+        <activity android:name=".Details" />
     </application>
 
 </manifest>

@@ -2,13 +2,20 @@ package com.example.roee_p.alpha;
 
 public class Item {
     public String id;
-    public String name;
-    public int value;
+    public String city;
+    public int age;
+    public String description;
+    public String email;
+    public String conditions;
 
-    public Item(String id, String name, int value) {
+
+    public Item(String id, String city, int age, String description, String email, String conditions) {
         this.id = id;
-        this.name = name;
-        this.value = value;
+        this.city = city;
+        this.age = age;
+        this.description = description;
+        this.email = email;
+        this.conditions = conditions;
     }
 
     public Item() {
@@ -18,23 +25,23 @@ public class Item {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public String getCity() {
+        return city;
     }
 
-    public String getName() {
-        return name;
+    public int getAge() {
+        return age;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getDescription() {
+        return description;
     }
 
-    public int getValue() {
-        return value;
+    public String getEmail() {
+        return email;
     }
 
-    public void setValue(int value) {
-        this.value = value;
+    public String getConditions() {
+        return conditions;
     }
 }

@@ -11,14 +11,15 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class ItemList extends ArrayAdapter<Item> {
-    private Activity context;
-    private List<Item> itemList;
-    public ItemList(Activity context, List<Item> itemList){
+public class JobList extends ArrayAdapter<Item> {
+    public Activity context;
+    public List<Item> itemList;
+
+    public JobList(Activity context, List<Item> itemList)
+    {
         super(context, R.layout.list_layout, itemList);
         this.context = context;
         this.itemList = itemList;
-
     }
 
     @NonNull
@@ -27,20 +28,18 @@ public class ItemList extends ArrayAdapter<Item> {
         LayoutInflater inflater = context.getLayoutInflater();
 
         View listViewItem = inflater.inflate(R.layout.list_layout, null, true);
+        TextView description, city, age, email, conditions;
+        description = listViewItem.findViewById(R.id.description);
+        city = listViewItem.findViewById(R.id.city);
+        age = listViewItem.findViewById(R.id.age);
+        email = listViewItem.findViewById(R.id.email);
+        conditions = listViewItem.findViewById(R.id.conditions);
 
-        TextView age= listViewItem.findViewById(R.id.age);
-        TextView city = listViewItem.findViewById(R.id.city);
-        TextView email = listViewItem.findViewById(R.id.email);
-        TextView  description= listViewItem.findViewById(R.id.description);
-        TextView conditions= listViewItem.findViewById(R.id.conditions);
-
-
-
-        Item item= itemList.get(position);
-        city.setText(item.getCity());
-        age.setText(""+item.getAge());
-        email.setText(item.getEmail());
+        Item item = itemList.get(position);
         description.setText(item.getDescription());
+        city.setText(item.getCity());
+        age.setText(item.getAge());
+        email.setText(item.getEmail());
         conditions.setText(item.getConditions());
 
         return listViewItem;

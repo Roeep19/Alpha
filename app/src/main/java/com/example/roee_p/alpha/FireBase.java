@@ -70,8 +70,8 @@ public class FireBase extends AppCompatActivity {
 
         if (!name.isEmpty() && !value.isEmpty()){
             String id = ref.push().getKey();
-            Item item = new Item(id, name, Integer.parseInt(value));
-            ref.child(id).setValue(item);
+            //Item item = new Item(id, name, Integer.parseInt(value));
+            //ref.child(id).setValue(item);
 
         }
     }
